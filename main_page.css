@@ -1,0 +1,68 @@
+.port{
+	text-shadow: 0px 10px 2px #000000;
+}
+
+.image{
+	position: absolute;
+	transition: filter 300ms;
+	width: 10%;
+	aspect-ratio:1/1;
+	margin-top: 3.5%;
+	margin-left: 9.6%;
+	border-radius: 10%;
+	filter:blur(3px);
+}
+.link{
+	width:100%;
+	height:100%;
+}
+.button{
+	width:100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+.text{
+	position: absolute;
+	display: block;
+	transition: margin-top 300ms;
+	width: 10%;
+	aspect-ratio:1/1;
+	margin-top: 7%;
+	margin-left: 12.3%;
+	text-shadow: 0 2px 3px black;
+}
+
+.txt3{
+	position: absolute;
+	transform: translateX(-3%)
+}
+
+.containers:hover .image{
+	transition: box-shadow 500ms, filter 500ms;
+	filter:blur(0px);
+	box-shadow: 5px -5px 0 0 rgb(100,100,100),
+				10px -10px 0 0 rgb(50,50,50),
+				15px -15px 0 0 rgb(10,10,10);
+}
+.containers:hover .text{
+	transition: margin-top 300ms;
+	position: absolute;
+	margin-top: 18%;
+}
+.containers:hover{
+	transition: box-shadow 300ms ;
+	box-shadow: 3px 5px 3px #000000;
+}
+
+.containers{
+	display: flex;
+	float:left;
+	margin-top: 3%;
+	margin-left: 2.5%;
+	width: 30%;
+	aspect-ratio:3/1.7;
+	background-color:#000826;
+	border-radius: 4%;
+	cursor: pointer;
+}
